@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject.SelectFacilityTypePage"
+             Title="Select Facility Type">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Button x:Name="FindCarParkingButton" Text="Find car parking" Grid.Row="0" />
+        <Button x:Name="FindBikeParkingButton" Text="Find bike parking" Grid.Row="1" />
+        <Button x:Name="FindElectricCarChargingButton" Text="Find electric car charging" Grid.Row="2" />
+        <Button x:Name="FindFarePurchasingButton" Text="Find fare purchasing" Grid.Row="3" />
+    </Grid>
+</ContentPage>

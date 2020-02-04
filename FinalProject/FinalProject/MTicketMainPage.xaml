@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject.MTicketMainPage"            
+             Title = "T"
+             BackgroundColor="Fuchsia">
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.Resources>
+            <ResourceDictionary>
+                <Style TargetType="Button">
+                    <Setter Property="HorizontalOptions" Value="Center" />
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
+
+        <Button Grid.Row="0" Text="Buy Tickets" BackgroundColor="White" CornerRadius="10" ContentLayout="Right"
+                HorizontalOptions="Fill" VerticalOptions="Start" HeightRequest="45" WidthRequest="90" FontSize="Default">
+            <Button.Image>
+                <OnPlatform 
+                    x:TypeArguments="FileImageSource" 
+                    Android="ic_action_forward.png" />
+            </Button.Image>
+        </Button>
+        <Label Grid.Row="1" Text="Recent trips will appear here!" BackgroundColor="DarkOrchid" FontSize="Micro" TextColor="White" VerticalTextAlignment="Center" />
+
+        <Label Grid.Row="2" BackgroundColor="Fuchsia"/>
+        <Button Grid.Row="3" Text="Ticket Wallet" BackgroundColor="White" CornerRadius="10" ContentLayout="Right"
+                HorizontalOptions="Fill" VerticalOptions="Start" FontSize="Default">
+            <Button.Image>
+                <OnPlatform 
+                    x:TypeArguments="FileImageSource" 
+                    Android="ic_action_forward.png" />
+            </Button.Image>
+        </Button>
+        <Label Grid.Row="4" Text="Your top tickets wil appear here for quick access" BackgroundColor="DarkOrchid" FontSize="Micro" TextColor="White" VerticalTextAlignment="Center" />
+
+        <Label Grid.Row="5" HeightRequest="20" BackgroundColor="Fuchsia"/>
+        <Button Grid.Row="6" Text="Schedule" BackgroundColor="White" CornerRadius="10" ContentLayout="Right"
+                HorizontalOptions="Fill" VerticalOptions="Start" FontSize="Default">
+            <Button.Image>
+                <OnPlatform 
+                    x:TypeArguments="FileImageSource" 
+                    Android="ic_action_forward.png" />
+            </Button.Image>
+        </Button>
+        <Label Grid.Row="7" BackgroundColor="Fuchsia"/>
+        <Button x:Name="MTicketUtilitiesButton" Grid.Row="8" Text="Utilities" BackgroundColor="White" CornerRadius="10" ContentLayout="Right"
+                HorizontalOptions="Fill" VerticalOptions="Start" FontSize="Default">
+            <Button.Image>
+                <OnPlatform 
+                    x:TypeArguments="FileImageSource" 
+                    Android="ic_action_forward.png" />
+            </Button.Image>
+        </Button>
+    </Grid>
+</ContentPage>

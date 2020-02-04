@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject.StopSearchResultsPage"
+             Title="Stop Search Results">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Text="Number of records returned:" />
+        <Label x:Name="RecordCount" Grid.Row="1" />
+        <Label Grid.Row="2" Text="Search query:" />
+        <Label x:Name="SearchQuery" Grid.Row="3" />
+        <Label Grid.Row="4" Text="Name of 1st stop returned:" />
+        <Label x:Name="Stop1" Grid.Row="5" />
+        <Label Grid.Row="6" Text="Name of 2nd stop returned:" />
+        <Label x:Name="Stop2" Grid.Row="7" />
+    </Grid>
+</ContentPage>

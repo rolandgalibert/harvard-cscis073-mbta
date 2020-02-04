@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject.FindStopsPage"
+             Title="Find Stops">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+    <StackLayout >
+        <Picker x:Name="StopSearchCenter" Title="Select search center" >
+            <Picker.Items>
+                <x:String>My location</x:String>
+                <x:String>Specific lat, long</x:String>
+                <x:String>Harvard Square</x:String>
+                <x:String>Copley Square</x:String>
+                <x:String>Alewife</x:String>
+                <x:String>Braintree</x:String>
+                <x:String>Framingham</x:String>
+            </Picker.Items>
+        </Picker>
+        <Picker x:Name="StopSearchRadius" Title="Select search radius" >
+            <Picker.Items>
+                <x:String>1</x:String>
+                <x:String>2</x:String>
+                <x:String>5</x:String>
+                <x:String>10</x:String>
+            </Picker.Items>
+        </Picker>
+        <Button x:Name="StopSearchButton" Text="Search" />
+    </StackLayout>
+</ContentPage>

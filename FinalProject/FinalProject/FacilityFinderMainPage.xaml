@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject.FacilityFinderMainPage"
+             Title="MBTA FacilityFinder"
+             BackgroundColor="Fuchsia">
+
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.Resources>
+            <ResourceDictionary>
+                <Style TargetType="Button">
+                    <Setter Property="HorizontalOptions" Value="Center" />
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
+        <Label x:Name="UseMyLocation" Grid.Row="0" Grid.Column="0" FontSize="Default" Text="Use my location"  BackgroundColor="Fuchsia" TextColor="White" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+        <Switch x:Name="UseMyLocationSwitch" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" IsToggled="True" />
+        <!--
+        <Label x:Name="UseGooglePlacesLocation" Grid.Row="1" Grid.ColumnSpan="2" Text="Or enter location" BackgroundColor="Fuchsia" TextColor="White" VerticalTextAlignment="Center" />
+-->
+        <Entry x:Name="UseGooglePlacesLocation" Placeholder="Or enter a location" FontSize="Default" Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="Fuchsia" TextColor="White"  />
+        <Button x:Name="CarParkingButton" Grid.Row="2" Grid.ColumnSpan="2" Text="Car parking" BackgroundColor="White" CornerRadius="10"
+                HorizontalOptions="Fill" FontSize="Default" HeightRequest="38">
+            <Button.Image>
+                <OnPlatform 
+                    x:TypeArguments="FileImageSource" 
+                    Android="car.png" />
+            </Button.Image>
+        </Button>
+        <Button x:Name="ElectricCarChargingButton" Grid.Row="3" Grid.ColumnSpan="2" Text="Electric car charging" BackgroundColor="White" CornerRadius="10"
+                HorizontalOptions="Fill" FontSize="Default" HeightRequest="38">
+            <Button.Image>
+                <OnPlatform 
+                    x:TypeArguments="FileImageSource" 
+                    Android="lightning_bolt.png" />
+            </Button.Image>
+        </Button>
+        <Button x:Name="BikeParkingButton" Grid.Row="4" Grid.ColumnSpan="2" Text="Bike parking" BackgroundColor="White" CornerRadius="10"
+                HorizontalOptions="Fill" FontSize="Default" HeightRequest="38">
+            <Button.Image>
+                <OnPlatform 
+                    x:TypeArguments="FileImageSource" 
+                    Android="bicycle.png" />
+            </Button.Image>
+        </Button>
+        <Button x:Name="FarePurchaseButton" Grid.Row="5" Grid.ColumnSpan="2" Text="Fare purchase facilities" BackgroundColor="White" CornerRadius="10"
+                HorizontalOptions="Fill" FontSize="Default" HeightRequest="38">
+            <Button.Image>
+                <OnPlatform 
+                    x:TypeArguments="FileImageSource" 
+                    Android="dollar_sign.png" />
+            </Button.Image>
+        </Button>
+    </Grid>
+</ContentPage>

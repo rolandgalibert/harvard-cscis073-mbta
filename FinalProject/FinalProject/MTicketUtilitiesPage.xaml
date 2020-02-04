@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject.MTicketUtilitiesPage"
+             Title = "Utilities"
+             BackgroundColor="Fuchsia">
+
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.Resources>
+            <ResourceDictionary>
+                <Style TargetType="Button">
+                    <Setter Property="HorizontalOptions" Value="Center" />
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
+
+        <Label Grid.Row="0" Text="TOOLS" BackgroundColor="Fuchsia" FontSize="Micro" TextColor="White" VerticalTextAlignment="Center" />
+
+        <Button Grid.Row="1" Text="My Account" BackgroundColor="White" CornerRadius="10" ContentLayout="Right"
+                HorizontalOptions="Fill" FontSize="Micro" HeightRequest="38">
+            <Button.Image>
+                <OnPlatform 
+                    x:TypeArguments="FileImageSource" 
+                    Android="ic_action_forward.png" />
+            </Button.Image>
+        </Button>
+        <Button Grid.Row="2" Text="Help" BackgroundColor="White" CornerRadius="10" ContentLayout="Right"
+                HorizontalOptions="Fill" FontSize="Micro" HeightRequest="38">
+            <Button.Image>
+                <OnPlatform 
+                    x:TypeArguments="FileImageSource" 
+                    Android="ic_action_forward.png" />
+            </Button.Image>
+        </Button>
+        <Button Grid.Row="3" Text="My Cards" BackgroundColor="White" CornerRadius="10" ContentLayout="Right"
+                HorizontalOptions="Fill" FontSize="Micro" HeightRequest="38">
+            <Button.Image>
+                <OnPlatform 
+                    x:TypeArguments="FileImageSource" 
+                    Android="ic_action_forward.png" />
+            </Button.Image>
+        </Button>
+        <Label Grid.Row="4" Text="TRIP TOOLS" BackgroundColor="Fuchsia" FontSize="Micro" TextColor="White" VerticalTextAlignment="Center" />
+        <Button Grid.Row="5" Text="Alerts" BackgroundColor="White" CornerRadius="10" ContentLayout="Right"
+                HorizontalOptions="Fill" FontSize="Micro" HeightRequest="38">
+            <Button.Image>
+                <OnPlatform 
+                    x:TypeArguments="FileImageSource" 
+                    Android="ic_action_forward.png" />
+            </Button.Image>
+        </Button>
+        <Button Grid.Row="6" Text="Commuter Rail Map" BackgroundColor="White" CornerRadius="10" ContentLayout="Right"
+                HorizontalOptions="Fill" FontSize="Micro" HeightRequest="38">
+            <Button.Image>
+                <OnPlatform 
+                    x:TypeArguments="FileImageSource" 
+                    Android="ic_action_forward.png" />
+            </Button.Image>
+        </Button>
+        <Button Grid.Row="7" Text="Transit App" BackgroundColor="White" CornerRadius="10" ContentLayout="Right"
+                HorizontalOptions="Fill" FontSize="Micro" HeightRequest="38">
+            <Button.Image>
+                <OnPlatform 
+                    x:TypeArguments="FileImageSource" 
+                    Android="ic_action_forward.png" />
+            </Button.Image>
+        </Button>
+        <Button x:Name="FacilityFinderButton" Grid.Row="8" Text="FacilityFinder" BackgroundColor="White" CornerRadius="10" ContentLayout="Right"
+                HorizontalOptions="Fill" FontSize="Micro" HeightRequest="38">
+            <Button.Image>
+                <OnPlatform 
+                    x:TypeArguments="FileImageSource" 
+                    Android="ic_action_forward.png" />
+            </Button.Image>
+        </Button>
+
+    </Grid>
+</ContentPage>
